@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akademi : School and Education Management Admin Panel</title>
+  <!-- css -->
+  <link rel="stylesheet" href="asset/css/style.css" />
+  <!-- Media Query -->
+  <link rel="stylesheet" href="asset/media query/media.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Fonts -->
+  <link rel="stylesheet" href="asset/fonts/stylesheet.css">
+</head>
+
+<body>
+  <!-- Aside of Panel -->
+  <aside>
+    <div class="aside_nav">
+      <div class="logo text-center">
+        <a href="index.html"><i class="fa-solid fa-a"></i></a>
+        <span class="nav-link">Akademi</span>
+      </div>
+      <div class="menu">
+        <ul class="admin2">
+          <li>
+          <a href="javascript:void(0)">
+              <i class="fa-solid fa-house"></i>
+              <span class="dsc">Dashboard</span> 
+              <i class="fa-solid fa-sort-down"></i>
+          </a>
+          <ul class="submenu">
+            <li>Dashboard Light</li>
+            <li>Dashboard Dark</li>
+            <li>Finance</li>
+          </ul>
+          </li>
+        </ul>
+        <ul class="admin3">  
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span class="dsc">Student</span>
+              <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu1">
+              <li>Student</li>
+              <li>Student Detail</li>
+              <li>Add New Student</li>
+            </ul>
+          </li>
+          </li>
+        </ul> 
+        <ul class="admin4">  
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-solid fa-user"></i>
+              <span class="dsc">Teacher</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu2">
+              <li>Teacher</li>
+              <li>Teacher Detail</li>
+              <li>Add new Teacher</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="admin5"> 
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-solid fa-utensils"></i>
+              <span class="dsc">Food</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu3">
+              <li>Food Menu</li>
+              <li>Food Detail</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="admin6">  
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-solid fa-folder"></i>
+              <span class="dsc">File Manager</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu4">
+              <li>File Manager</li>
+              <li>User</li>
+              <li>Calendar</li>
+              <li>Chat</li>
+              <li>Activity</li>
+            </ul>
+          </li>
+        </ul>  
+          <ul class="admin7">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-brands fa-figma"></i>
+              <span class="dsc">Apps</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu7">
+              <li>Profile</li>
+              <li>Edit Profile</li>
+              <li>Post Details</li>
+              <li>Email</li>
+              <li>Calender</li>
+              <li>Shop</li>
+            </ul>
+          </li>
+          </ul>
+          <ul class="admin8">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-solid fa-square-poll-vertical"></i>
+              <span class="dsc">Charts</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu8">
+              <li>Flot</li>
+              <li>Morris</li>
+              <li>Chart js</li>
+              <li>Chartist</li>
+              <li>Sparkline</li>
+              <li>Peity</li>
+            </ul>
+          </li>
+          </ul>
+          <ul class="admin9">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-solid fa-heart"></i>
+              <span class="dsc">Bootstrap</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu9">
+              <li>Accordion</li>
+              <li>Alert</li>
+              <li>Badge</li>
+              <li>Button</li>
+              <li>Modal</li>
+              <li>Button Group</li>
+              <li>List Group</li>
+              <li>Cards</li>
+              <li>Carousel</li>
+            </ul>
+          </li>
+          </ul>
+          <ul class="admin10">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-solid fa-puzzle-piece"></i>
+              <span class="dsc">Plugins</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu10">
+              <li>Select 2</li>
+              <li>Nestedable</li>
+              <li>Noui Slider</li>
+              <li>Sweet Alert</li>
+              <li>Toastr</li>
+              <li>Jqv Map</li>
+              <li>Light Gallery</li>
+            </ul>
+          </li>
+          </ul>
+          <ul class="admin11">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-solid fa-layer-group"></i>
+              <span class="dsc">Widget</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu11">
+              <li>Chart</li>
+              <li>Card</li>
+              <li>List</li>
+            </ul>
+          </li>
+          </ul>
+          <ul class="admin12">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-regular fa-file"></i>
+              <span class="dsc">Forms</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu12">
+              <li>Forms Elements</li>
+              <li>Wizard</li>
+              <li>ckEditor</li>
+              <li>Pickers</li>
+            </ul>
+          </li>
+          </ul>
+          <ul class="admin13">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-solid fa-table"></i>
+              <span class="dsc">Table</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu13">
+              <li>Bootstrap</li>
+              <li>Datatable</li>
+            </ul>
+          </li>
+          </ul>
+          <ul class="admin14">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-regular fa-file-lines"></i>
+              <span class="dsc">Pages</span>
+            <i class="fa-solid fa-sort-down"></i>
+            </a>
+            <ul class="submenu14">
+              <li>Login</li>
+              <li>Register</li>
+              <li>Error</li>
+              <li>Lock Screen</li>
+              <li>Empty Page</li>
+            </ul>
+          </li>
+          </ul>
+        </ul>
+        </menu>
+      </div>
+  </aside>
+
+
+  <!-- Header of Panel -->
+  <header class="d-flex f-wrap justify-between">
+    <div class="dashboard">
+      <i class="fa-solid fa-braille"></i>
+      <span>Dashboard</span>
+    </div>
+    <div class="dsc d-flex f-wrap">
+      <div class="click">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+        <div class="drop1 align-center">
+          <i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"><input type="text" placeholder="Search"></i>
+          <h6>Recently searched:</h6>
+          <div class="con align-center">
+            <ul>
+              <li class="d-flex f-wrap align-center justify-between"><div class="d-flex f-wrap"><img src="asset/images/7.jpg" alt=""><p>Benjamin</p></div><i class="fa-solid fa-trash" style="color: #ccdaf0;"></i></li>
+              <li class="d-flex f-wrap align-center justify-between"><div class="d-flex f-wrap"><img src="asset/images/2 (1).jpg" alt=""><p>Oliver</p></div><i class="fa-solid fa-trash" style="color: #ccdaf0;"></i></li>
+              <li class="d-flex f-wrap align-center justify-between"><div class="d-flex f-wrap"><img src="asset/images/7.jpg" alt=""><p>Lucas</p></div><i class="fa-solid fa-trash" style="color: #ccdaf0;"></i></li>
+              <li class="d-flex f-wrap align-center justify-between"><div class="d-flex f-wrap"><img src="asset/images/7.jpg" alt=""><p>Benjamin</p></div><i class="fa-solid fa-trash" style="color: #ccdaf0;"></i></li>
+            </ul>
+          </div>
+        </div>
+      </i>
+      <i class="fa-solid fa-shapes"></i>
+      <i class="fa-solid fa-moon"></i>
+      <i class="fa-solid fa-expand">
+        <input type="button" value="" onclick="toggleFullScreen(document.body)" />
+      </i>
+      <i class="fa-solid fa-comment"></i>
+      <div class="c">
+      <i class="fa-solid fa-bell">
+        <div class="drop2">
+          <h4>Notification</h4>
+          <div class="cont d-flex f-wrap">
+          <img src="asset/images/7.jpg" alt=""><span>Dr sultads Send you Photo</span><p>(29 July 2020 - 02:26 PM)</p>
+          </div>
+          <div class="cont d-flex f-wrap">
+            <img src="asset/images/7.jpg" alt=""><span>Dr sultads Send you Photo</span><p>(29 July 2020 - 02:26 PM)</p>
+            </div>
+            <div class="cont d-flex f-wrap">
+              <img src="asset/images/7.jpg" alt=""><span>Dr sultads Send you Photo</span><p>(29 July 2020 - 02:26 PM)</p>
+              </div>
+              <div class="cont d-flex f-wrap">
+                <img src="asset/images/7.jpg" alt=""><span>Dr sultads Send you Photo</span><p>(29 July 2020 - 02:26 PM)</p>
+                </div>
+                <div class="cont d-flex f-wrap">
+                  <img src="asset/images/7.jpg" alt=""><span>Dr sultads Send you Photo</span><p>(29 July 2020 - 02:26 PM)</p>
+                  </div>
+        </div>
+      </i>
+      </div>
+      <i class="fa-solid fa-gear"></i>
+      <div class="img">
+        <img src="asset/images/user.jpg" alt="" class="admin">
+        <div class="dropmenu">
+          <div class="card">
+            <p>Profile</p>
+            <p>Message</p>
+            <p>Notification</p>
+            <p>Settings</p>
+            <hr>
+            <a href="login.html"><button class="btn justify-center">Log out</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- Main Content -->
+ <div class="content_area">
+    <div class="grid justify-center">
+      <div class="box d-flex f-wrap align-center">
+        <i class="fa-solid fa-user"></i>
+        <div class="cont">
+          <p>Students</p>
+          <span class="dsc">932</span>
+        </div>
+      </div>
+      <div class="box d-flex f-wrap align-center">
+        <i class="fa-solid fa-user-tie"></i>
+        <div class="cont">
+          <p>Teachers</p>
+          <span class="dsc">754</span>
+        </div>
+      </div>
+      <div class="box d-flex f-wrap align-center">
+        <i class="fa-regular fa-calendar"></i>
+        <div class="cont">
+          <p>Events</p>
+          <span class="dsc">40</span>
+        </div>
+      </div>
+      <div class="box d-flex f-wrap align-center">
+        <i class="fa-solid fa-utensils"></i>
+        <div class="cont">
+          <p>Foods</p>
+          <span class="dsc">32k</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content d-flex f-wrap justify-between">
+          <h1>School Performance</h1>
+          <div class="co d-flex mtb-20px">
+            <i class="fa-solid fa-circle"></i><span>This Week (1.245)</span></i>
+            <div class="c">
+              <i class="fa-solid fa-circle"><span>Last Week (1.245)</span></i>
+            </div>
+          </div>
+        </div>
+        <div id="chart1"></div>
+      </div>
+      <div class="box">
+        <div id="chart"></div>
+        <div class="content text-center">
+          <i class="fa-solid fa-circle"></i><span>Number of Students</span>
+        </div>
+      </div>
+      <div class="box">
+        <h1>School Calender</h1>
+        <div class="calendar-wrapper">
+          <button id="btnPrev" type="button">Prev</button>
+          <button id="btnNext" type="button">Next</button>
+          <div id="divCal"></div>
+        </div>
+      </div>
+      <div class="box">
+        <h2>Teacher Details</h2>
+        <table class="teacher_details">
+          <thead>
+            <tr class="trow">
+              <th>Name</th>
+              <th>Subject</th>
+              <th>Qualification</th>
+              <th>Fees</th>
+              <th>Performance</th>
+            </tr>
+          </thead>
+
+
+          <tbody>
+            <tr class="co2">
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hardy</td>
+              <td>Basic Algorithm</td>
+              <td>B.E</td>
+              <td>$17.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Harry</td>
+              <td>English</td>
+              <td>B.Tech</td>
+              <td>$219.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Harry john</td>
+              <td>History</td>
+              <td>B.Tech</td>
+              <td>$18.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Jack Xarma</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$192.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>James</td>
+              <td>History</td>
+              <td>B,com</td>
+              <td>$21.70</td>
+              <div class="bad">
+                <td>Bad</td>
+              </div>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>James Brown</td>
+              <td>History</td>
+              <td>B.Tech</td>
+              <td>$15.70</td>
+              <div class="bad">
+                <td>Bad</td>
+              </div>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Jaany</td>
+              <td>Basic Algorithm</td>
+              <td>B.Tech</td>
+              <td>$21.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Hanu</td>
+              <td>Programming</td>
+              <td>B.Tech</td>
+              <td>$217.70</td>
+              <td>Good</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="box">
+        <h3>Unpaid Student intuition</h1>
+          <table class="upaid">
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>ID</td>
+                <td>Class</td>
+                <td>Fees</td>
+                <td>Rank</td>
+                <td>Action</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Jordan Nico</td>
+                <td class="name">ID 1234567811</td>
+                <td class=" j d-flex f-wrap align-center justify-center">
+                  <i class="fa-regular fa-user"></i>
+                  <div class="con">
+                    <p>Class</p>
+                    <p>VII B</p>
+                  </div>
+                </td>
+                <td>$52,036</td>
+                <td>First</td>
+                <td>
+                  <i class="fa-solid fa-print"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Jordan Nico</td>
+                <td class="name">ID 1234567811</td>
+                <td class="j d-flex f-wrap align-center justify-center">
+                  <i class="fa-regular fa-user"></i>
+                  <div class="con">
+                    <p>Class</p>
+                    <p>VII B</p>
+                  </div>
+                </td>
+                <td>$52,036</td>
+                <td>First</td>
+                <td>
+                  <i class="fa-solid fa-print"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Karen Hope</td>
+                <td class="name">ID 1234567812</td>
+                <td class="j d-flex f-wrap align-center justify-center">
+                  <i class="fa-regular fa-user"></i>
+                  <div class="con">
+                    <p>Class</p>
+                    <p>VII B</p>
+                  </div>
+                </td>
+                <td>$52,036</td>
+                <td>First</td>
+                <td>
+                  <i class="fa-solid fa-print"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Karen Hope</td>
+                <td class="name">ID 1234567812</td>
+                <td class="j d-flex f-wrap align-center justify-center">
+                  <i class="fa-regular fa-user"></i>
+                  <div class="con">
+                    <p>Class</p>
+                    <p>VII B</p>
+                  </div>
+                </td>
+                <td>$52,036</td>
+                <td>First</td>
+                <td>
+                  <i class="fa-solid fa-print"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Nadila Adja</td>
+                <td class="name">ID 1234567813</td>
+                <td class="j d-flex f-wrap align-center justify-center">
+                  <i class="fa-regular fa-user"></i>
+                  <div class="con">
+                    <p>Class</p>
+                    <p>VII B</p>
+                  </div>
+                </td>
+                <td>$52,036</td>
+                <td>First</td>
+                <td>
+                  <i class="fa-solid fa-print"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Karen Hope</td>
+                <td class="name">ID 1234567812</td>
+                <td class="j d-flex f-wrap align-center justify-center">
+                  <i class="fa-regular fa-user"></i>
+                  <div class="con">
+                    <p>Class</p>
+                    <p>VII B</p>
+                  </div>
+                </td>
+                <td>$52,036</td>
+                <td>First</td>
+                <td>
+                  <i class="fa-solid fa-print"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </td>
+              </tr>
+              <tr>
+                <tr>
+                  <td>Karen Hope</td>
+                  <td class="name">ID 1234567812</td>
+                  <td class="j d-flex f-wrap align-center justify-center">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="con">
+                      <p>Class</p>
+                      <p>VII B</p>
+                    </div>
+                  </td>
+                  <td>$52,036</td>
+                  <td>First</td>
+                  <td>
+                    <i class="fa-solid fa-print"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </td>
+                </tr>
+                <tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- JQuery -->
+  <script src="asset/jquery/jquery-3.7.1.min.js"></script>
+  <!-- JQuery main -->
+  <script src="asset/jquery/jquery_things.js"></script>
+  <!-- ApexCharts -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="asset/jquery/apexcharts.js"></script>
+  <script src="asset/jquery/charts.js"></script>
+  <script>
+  </script>
+</body>
+
+</html>
